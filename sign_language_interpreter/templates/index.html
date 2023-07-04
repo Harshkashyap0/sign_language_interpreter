@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign Language Classification</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Sign Language Classification</h1>
+    <form method="post" action="/predict" enctype="multipart/form-data">
+        <input type="file" name="image">
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>
